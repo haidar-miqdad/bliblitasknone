@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "roboto", sans-serif;
+      }
+
+      .form-control {
+        background-color: #f1f2f2;
+        color: #9b9ea1;
+        border: none;
+        padding: 24px 20px 8px 14px;
+        height: 56px;
+        transition: linear 0.3s;
+      }
+
+      .form-control:hover {
+        background-color: #dbdddd;
+        color: #aeb0b1;
+      }
+
+      h3 {
+        color: #079fe6;
+      }
+
+      .form-check{
+        font-size: 13px;
+      }
+
+      .registrasi {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inti mt-3 pt-2 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+      <!-- gambar -->
+
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <img src="blibli.svg" alt="" />
+        </div>
+
+        <!-- input -->
+
+        <div class="col d-flex justify-content-center align-items-center">
+          <div class="d-block text-center">
+            <!-- h3 -->
+            <h3>Daftar di Blibli</h3>
+            <div class="d-flex justify-content-center align-items-center">
+              <form
+                class="p-4 shadow-sm p-3 mb-3 bg-body-tertiary rounded w-75 h-75 rounded-4"
+              >
+                <!-- nama -->
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    id="disabledTextInput"
+                    class="form-control"
+                    placeholder="Nama lengkap"
+                  />
+                </div>
+
+                <!-- email -->
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email/nomor HP"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+
+                  <!-- password -->
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Kata sandi"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+
+                <!-- check box -->
+                <div class="mb-3 form-check ">
+                  <input
+                    type="checkbox"
+                    class="form-check-input "
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label text-start" for="exampleCheck1"
+                    >Dengan mencentang ini, kamu menyetujui
+                    <a href="#" class="text-decoration-none"
+                      >Syarat & Ketentuan</a
+                    >
+                    kami.</label
+                  >
+                </div>
+
+                <!-- button -->
+                <div
+                  class="col d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="submit"
+                    class="btn btn-secondary disabled rounded-pill text-body-secondary d-flex justify-content-center align-items-center pt-2 pb-2 ps-4 pe-4 secondary-subtle"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div
+              class="footer d-flex justify-content-evenly align-items-center"
+            >
+              <div class="mt-1">
+                <button
+                  type="button"
+                  class="btn btn-light btn-sm shadow p-2 mb-5 bg-body-tertiary rounded-4 me-2"
+                >
+                  <img src="facebook.logo.svg" alt="" />
+                  Facebook
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-light btn-sm shadow ps-3 pe-3 mb-5 bg-body-tertiary rounded-4 me-3"
+                >
+                  <img src="google-logo.png" alt="" width="27px" />
+                  Google
+                </button>
+              </div>
+            </div>
+
+            <div class="registrasi">
+              <p>
+                Sudah terdaftar?
+                <a href="#" class="text-decoration-none">Masuk</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
